@@ -60,6 +60,15 @@
   window.addEventListener('load', navbarlinksActive)
   onscroll(document, navbarlinksActive)
 
+
+  document.querySelector('a[href="#resume"]').addEventListener('click', function() {
+    document.getElementById('facts').style.display = 'none';
+    document.getElementById('skills').style.display = 'none';
+    document.getElementById('resume').style.display = 'block';
+  });
+
+
+
   /**
    * Scrolls to an element with header offset
    */
